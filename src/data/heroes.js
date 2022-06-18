@@ -33,7 +33,6 @@ const heroes = [
         owner: 'Marvel'
     },
 ];
-s
 //3 )
 // export const owners = ['DC', 'Marvel']
 

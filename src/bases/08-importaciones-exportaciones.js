@@ -5,14 +5,15 @@
 // También se pueden utilizar otras constantes del mismo archivo que no sean default encerrando 
 // la importación del objeto entre llaves {}
 // 3) import heroes, {owners}  from './data/heroes';
-import {heroes,owners}  from './data/heroes';
-console.log(heroes);
+import {heroes,owners}  from '../data/heroes';
+// console.log(heroes);
 
-const getHeroeById = (id) => heroes.find(heroe => heroe.id === id);
+export const getHeroeById = (id) => heroes.find(heroe => heroe.id === id);
 
-console.log(getHeroeById(4));
+// console.log(getHeroeById(4));
 
 // Ejemplo con Filter
-const getHeroesMyOwner = ( owner ) => heroes.filter(heroe => heroe.owner === owner);
+export const getHeroesMyOwner = ( owner ) => heroes.filter(heroe => heroe.owner === owner);
 
-console.log(getHeroesMyOwner('DC'));
+// console.log(getHeroesMyOwner('DC'));
+
